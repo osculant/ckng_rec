@@ -1,151 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Easy Cooking Recipes | Learn to Cook Delicious Meals</title>
-<style>
-
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#fff7f2;
-color:#333;
-}
-
-header{
-background:#ff6b35;
-color:white;
-text-align:center;
-padding:40px 20px;
-}
-
-header h1{
-font-size:40px;
-margin-bottom:10px;
-}
-
-header p{
-font-size:18px;
-}
-
-.container{
-width:90%;
-max-width:1100px;
-margin:auto;
-padding:40px 0;
-}
-
-.section-title{
-text-align:center;
-font-size:30px;
-margin-bottom:30px;
-}
-
-.recipes{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-justify-content:center;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-width:300px;
-}
-
-.card h3{
-color:#ff6b35;
-}
-
-.cta{
-text-align:center;
-margin-top:40px;
-}
-
-button{
-background:#ff6b35;
-color:white;
-border:none;
-padding:15px 30px;
-font-size:18px;
-border-radius:5px;
-cursor:pointer;
-}
-
-button:hover{
-background:#e85a2c;
-}
-
-footer{
-background:#222;
-color:#ccc;
-text-align:center;
-padding:20px;
-font-size:14px;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delicious and easy-to-make cooking recipes for all skill levels.">
+    <meta name="keywords" content="recipes, cooking, easy recipes, food, delicious meals">
+    <meta name="author" content="Your Company Name">
+    <title>Cooking Recipes - Discover Delicious Meals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-
 <body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Cooking Recipes</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-<h1>Discover Easy & Delicious Cooking Recipes</h1>
-<p>Learn step-by-step recipes for tasty meals, desserts, and snacks.</p>
-</header>
+    <!-- Main Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Discover Easy and Delicious Recipes</h2>
+            <p>Find your next meal idea from our curated list of delicious and simple recipes.</p>
+            <a href="#recipes" class="cta-btn">Browse Recipes</a>
+        </div>
+    </section>
 
-<div class="container">
+    <!-- Recipe Listings -->
+    <section id="recipes">
+        <h2>Featured Recipes</h2>
+        <div class="recipe-card">
+            <img src="recipe1.jpg" alt="Recipe 1">
+            <h3>Recipe 1</h3>
+            <p>Delicious, quick, and easy to prepare.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="recipe-card">
+            <img src="recipe2.jpg" alt="Recipe 2">
+            <h3>Recipe 2</h3>
+            <p>Perfect for a family dinner!</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="recipe-card">
+            <img src="recipe3.jpg" alt="Recipe 3">
+            <h3>Recipe 3</h3>
+            <p>A healthy and tasty option for lunch.</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
 
-<h2 class="section-title">Popular Recipes</h2>
-
-<div class="recipes">
-
-<div class="card">
-<h3>Homemade Pizza</h3>
-<p>Learn how to make crispy and delicious pizza at home with simple ingredients.</p>
-</div>
-
-<div class="card">
-<h3>Classic Pasta</h3>
-<p>Easy pasta recipe with creamy sauce that anyone can cook in minutes.</p>
-</div>
-
-<div class="card">
-<h3>Chocolate Cake</h3>
-<p>Soft and rich chocolate cake recipe perfect for birthdays and celebrations.</p>
-</div>
-
-<div class="card">
-<h3>Healthy Smoothies</h3>
-<p>Quick smoothie recipes packed with vitamins and energy.</p>
-</div>
-
-<div class="card">
-<h3>Indian Street Snacks</h3>
-<p>Learn to cook popular street foods easily at home.</p>
-</div>
-
-<div class="card">
-<h3>Quick Breakfast Ideas</h3>
-<p>Start your day with healthy and delicious breakfast recipes.</p>
-</div>
-
-</div>
-
-<div class="cta">
-<h2>Explore 1000+ Easy Recipes</h2>
-<p>Simple cooking guides for beginners and home chefs.</p>
-<button>Start Cooking Now</button>
-</div>
-
-</div>
-
-<footer>
-© 2026 Easy Cooking Recipes | All Rights Reserved
-</footer>
-
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Cooking Recipes | <a href="privacy-policy.html">Privacy Policy</a></p>
+    </footer>
 </body>
 </html>
