@@ -3,21 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Easy Home Recipes</title>
+<title>Easy Home Cooking Recipes</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
 body{
+font-family:Arial;
+margin:0;
 background:#fafafa;
-line-height:1.6;
-color:#333;
 }
 
 header{
@@ -25,10 +18,6 @@ background:#ff7043;
 color:white;
 padding:20px;
 text-align:center;
-}
-
-header h1{
-font-size:32px;
 }
 
 nav{
@@ -42,82 +31,31 @@ nav a{
 color:white;
 padding:14px 20px;
 text-decoration:none;
-font-size:15px;
 }
 
 nav a:hover{
 background:#ff7043;
 }
 
-.hero{
-padding:60px 20px;
-text-align:center;
-background:#ffe0b2;
-}
-
-.hero h2{
-font-size:36px;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:18px;
-max-width:700px;
-margin:auto;
-}
-
 .container{
 width:90%;
-max-width:1200px;
+max-width:1100px;
 margin:auto;
 padding:40px 0;
 }
 
-.recipe-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.recipe-card{
+.recipe{
 background:white;
 padding:20px;
-border-radius:8px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-}
-
-.recipe-card h3{
-color:#ff7043;
-margin-bottom:10px;
-}
-
-.recipe-card ul{
-margin-left:18px;
-margin-bottom:10px;
-}
-
-.recipe-card p{
-font-size:14px;
+margin-bottom:20px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
 footer{
 background:#333;
 color:white;
 text-align:center;
-padding:25px;
-margin-top:40px;
-}
-
-@media(max-width:600px){
-
-.hero h2{
-font-size:28px;
-}
-
-header h1{
-font-size:24px;
-}
-
+padding:20px;
 }
 
 </style>
@@ -127,145 +65,37 @@ font-size:24px;
 
 <header>
 <h1>Easy Home Cooking Recipes</h1>
-<p>Simple, Delicious & Real Recipes For Everyday Cooking</p>
+<p>Simple & Delicious Recipes Anyone Can Cook</p>
 </header>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">Breakfast</a>
-<a href="#">Lunch</a>
-<a href="#">Dinner</a>
-<a href="#">Healthy</a>
-<a href="#">Contact</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="privacy.html">Privacy Policy</a>
 </nav>
 
-<section class="hero">
-<h2>Cook Delicious Meals At Home</h2>
-<p>Discover easy step-by-step recipes you can cook at home using simple ingredients. Perfect for beginners and food lovers.</p>
-</section>
+<div class="container">
 
-<section class="container">
-
-<div class="recipe-grid">
-
-<div class="recipe-card">
-<h3>Classic Pancakes</h3>
-
-<strong>Ingredients:</strong>
-<ul>
-<li>1 cup all-purpose flour</li>
-<li>1 tablespoon sugar</li>
-<li>1 teaspoon baking powder</li>
-<li>1 egg</li>
-<li>1 cup milk</li>
-</ul>
-
-<strong>Instructions:</strong>
-<p>
-Mix all ingredients into a smooth batter. Heat a pan on medium heat. Pour small batter portions and cook until bubbles form. Flip and cook until golden brown. Serve with honey or maple syrup.
-</p>
+<div class="recipe">
+<h2>Classic Pancakes</h2>
+<p>Fluffy homemade pancakes made with simple ingredients like flour, milk, and eggs. Perfect for breakfast.</p>
 </div>
 
-
-<div class="recipe-card">
-<h3>Garlic Butter Pasta</h3>
-
-<strong>Ingredients:</strong>
-<ul>
-<li>200g pasta</li>
-<li>2 tablespoons butter</li>
-<li>3 cloves garlic</li>
-<li>Salt & pepper</li>
-<li>Grated parmesan cheese</li>
-</ul>
-
-<strong>Instructions:</strong>
-<p>
-Cook pasta according to package instructions. Melt butter in a pan and sauté garlic until fragrant. Add cooked pasta and toss well. Season with salt, pepper, and top with parmesan cheese.
-</p>
+<div class="recipe">
+<h2>Garlic Butter Pasta</h2>
+<p>A quick pasta recipe made with butter, garlic, and parmesan cheese. Ready in under 20 minutes.</p>
 </div>
 
-
-<div class="recipe-card">
-<h3>Vegetable Stir Fry</h3>
-
-<strong>Ingredients:</strong>
-<ul>
-<li>1 cup broccoli</li>
-<li>1 carrot sliced</li>
-<li>1 bell pepper</li>
-<li>2 tbsp soy sauce</li>
-<li>1 tbsp olive oil</li>
-</ul>
-
-<strong>Instructions:</strong>
-<p>
-Heat oil in a wok. Add vegetables and stir fry for 4–5 minutes. Add soy sauce and cook for another 2 minutes. Serve hot with rice or noodles.
-</p>
+<div class="recipe">
+<h2>Vegetable Stir Fry</h2>
+<p>Healthy stir-fried vegetables cooked with soy sauce and olive oil. Great for lunch or dinner.</p>
 </div>
 
-
-<div class="recipe-card">
-<h3>Avocado Toast</h3>
-
-<strong>Ingredients:</strong>
-<ul>
-<li>2 slices whole grain bread</li>
-<li>1 ripe avocado</li>
-<li>Salt and pepper</li>
-<li>Lemon juice</li>
-</ul>
-
-<strong>Instructions:</strong>
-<p>
-Toast bread slices. Mash avocado with lemon juice, salt, and pepper. Spread evenly on toast and serve immediately for a healthy breakfast.
-</p>
 </div>
-
-
-<div class="recipe-card">
-<h3>Chicken Curry</h3>
-
-<strong>Ingredients:</strong>
-<ul>
-<li>500g chicken pieces</li>
-<li>2 onions</li>
-<li>2 tomatoes</li>
-<li>1 tbsp ginger garlic paste</li>
-<li>Spices (turmeric, chili, garam masala)</li>
-</ul>
-
-<strong>Instructions:</strong>
-<p>
-Sauté onions until golden. Add ginger garlic paste and tomatoes. Add spices and chicken. Cook for 20 minutes until chicken is tender. Serve with rice or naan.
-</p>
-</div>
-
-
-<div class="recipe-card">
-<h3>Chocolate Mug Cake</h3>
-
-<strong>Ingredients:</strong>
-<ul>
-<li>4 tbsp flour</li>
-<li>2 tbsp cocoa powder</li>
-<li>3 tbsp milk</li>
-<li>2 tbsp sugar</li>
-<li>2 tbsp oil</li>
-</ul>
-
-<strong>Instructions:</strong>
-<p>
-Mix all ingredients in a mug until smooth. Microwave for 60–90 seconds. Let it cool slightly and enjoy a quick chocolate dessert.
-</p>
-</div>
-
-
-</div>
-</section>
 
 <footer>
-<p>© 2026 Easy Home Cooking Recipes | All Rights Reserved</p>
+<p>© 2026 Easy Home Cooking Recipes</p>
 </footer>
 
 </body>
