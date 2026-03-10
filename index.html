@@ -1,94 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Delicious and easy-to-make cooking recipes for all skill levels.">
-    <meta name="keywords" content="recipes, cooking, easy recipes, food, delicious meals">
-    <meta name="author" content="Your Company Name">
-    <title>Cooking Recipes - Discover Delicious Meals</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Easy Home Recipes</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#fafafa;
+line-height:1.6;
+color:#333;
+}
+
+header{
+background:#ff7043;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+font-size:32px;
+}
+
+nav{
+background:#333;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+padding:14px 20px;
+text-decoration:none;
+font-size:15px;
+}
+
+nav a:hover{
+background:#ff7043;
+}
+
+.hero{
+padding:60px 20px;
+text-align:center;
+background:#ffe0b2;
+}
+
+.hero h2{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:40px 0;
+}
+
+.recipe-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.recipe-card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.recipe-card h3{
+color:#ff7043;
+margin-bottom:10px;
+}
+
+.recipe-card ul{
+margin-left:18px;
+margin-bottom:10px;
+}
+
+.recipe-card p{
+font-size:14px;
+}
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+@media(max-width:600px){
+
+.hero h2{
+font-size:28px;
+}
+
+header h1{
+font-size:24px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <h1>Cooking Recipes</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#recipes">Recipes</a></li>
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Main Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h2>Discover Easy and Delicious Recipes</h2>
-            <p>Find your next meal idea from our curated list of delicious and simple recipes.</p>
-            <a href="#recipes" class="cta-btn">Browse Recipes</a>
-        </div>
-    </section>
+<header>
+<h1>Easy Home Cooking Recipes</h1>
+<p>Simple, Delicious & Real Recipes For Everyday Cooking</p>
+</header>
 
-    <!-- Recipe Listings -->
-    <section id="recipes">
-        <h2>Featured Recipes</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#">Breakfast</a>
+<a href="#">Lunch</a>
+<a href="#">Dinner</a>
+<a href="#">Healthy</a>
+<a href="#">Contact</a>
+</nav>
 
-        <!-- Recipe 1: American Cheeseburger -->
-        <div class="recipe-card">
-            <img src="cheeseburger.jpg" alt="Cheeseburger">
-            <h3>Classic American Cheeseburger</h3>
-            <p>This classic cheeseburger is a quick, delicious, and satisfying meal perfect for any occasion.</p>
-            <a href="#">Read More</a>
-        </div>
+<section class="hero">
+<h2>Cook Delicious Meals At Home</h2>
+<p>Discover easy step-by-step recipes you can cook at home using simple ingredients. Perfect for beginners and food lovers.</p>
+</section>
 
-        <!-- Recipe 2: Apple Pie -->
-        <div class="recipe-card">
-            <img src="apple-pie.jpg" alt="Apple Pie">
-            <h3>Traditional American Apple Pie</h3>
-            <p>A delicious and comforting apple pie, perfect for holidays and family gatherings. Made with love!</p>
-            <a href="#">Read More</a>
-        </div>
+<section class="container">
 
-        <!-- Recipe 3: Mac and Cheese -->
-        <div class="recipe-card">
-            <img src="mac-and-cheese.jpg" alt="Mac and Cheese">
-            <h3>Classic Mac and Cheese</h3>
-            <p>This creamy and cheesy mac and cheese recipe is a family favorite that will please everyone at the table.</p>
-            <a href="#">Read More</a>
-        </div>
+<div class="recipe-grid">
 
-        <!-- Recipe 4: Grilled Cheese Sandwich -->
-        <div class="recipe-card">
-            <img src="grilled-cheese.jpg" alt="Grilled Cheese Sandwich">
-            <h3>Grilled Cheese Sandwich</h3>
-            <p>The perfect crispy and melty grilled cheese sandwich. Ideal for breakfast, lunch, or a quick snack!</p>
-            <a href="#">Read More</a>
-        </div>
+<div class="recipe-card">
+<h3>Classic Pancakes</h3>
 
-        <!-- Recipe 5: Pancakes -->
-        <div class="recipe-card">
-            <img src="pancakes.jpg" alt="Pancakes">
-            <h3>Fluffy American Pancakes</h3>
-            <p>Soft and fluffy pancakes made from scratch, served with syrup and your favorite toppings!</p>
-            <a href="#">Read More</a>
-        </div>
+<strong>Ingredients:</strong>
+<ul>
+<li>1 cup all-purpose flour</li>
+<li>1 tablespoon sugar</li>
+<li>1 teaspoon baking powder</li>
+<li>1 egg</li>
+<li>1 cup milk</li>
+</ul>
 
-        <!-- Recipe 6: Buffalo Wings -->
-        <div class="recipe-card">
-            <img src="buffalo-wings.jpg" alt="Buffalo Wings">
-            <h3>Spicy Buffalo Wings</h3>
-            <p>These spicy buffalo wings are perfect for game days or casual gatherings. Crispy, saucy, and irresistible!</p>
-            <a href="#">Read More</a>
-        </div>
-    </section>
+<strong>Instructions:</strong>
+<p>
+Mix all ingredients into a smooth batter. Heat a pan on medium heat. Pour small batter portions and cook until bubbles form. Flip and cook until golden brown. Serve with honey or maple syrup.
+</p>
+</div>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2026 Cooking Recipes | <a href="privacy-policy.html">Privacy Policy</a></p>
-    </footer>
+
+<div class="recipe-card">
+<h3>Garlic Butter Pasta</h3>
+
+<strong>Ingredients:</strong>
+<ul>
+<li>200g pasta</li>
+<li>2 tablespoons butter</li>
+<li>3 cloves garlic</li>
+<li>Salt & pepper</li>
+<li>Grated parmesan cheese</li>
+</ul>
+
+<strong>Instructions:</strong>
+<p>
+Cook pasta according to package instructions. Melt butter in a pan and sauté garlic until fragrant. Add cooked pasta and toss well. Season with salt, pepper, and top with parmesan cheese.
+</p>
+</div>
+
+
+<div class="recipe-card">
+<h3>Vegetable Stir Fry</h3>
+
+<strong>Ingredients:</strong>
+<ul>
+<li>1 cup broccoli</li>
+<li>1 carrot sliced</li>
+<li>1 bell pepper</li>
+<li>2 tbsp soy sauce</li>
+<li>1 tbsp olive oil</li>
+</ul>
+
+<strong>Instructions:</strong>
+<p>
+Heat oil in a wok. Add vegetables and stir fry for 4–5 minutes. Add soy sauce and cook for another 2 minutes. Serve hot with rice or noodles.
+</p>
+</div>
+
+
+<div class="recipe-card">
+<h3>Avocado Toast</h3>
+
+<strong>Ingredients:</strong>
+<ul>
+<li>2 slices whole grain bread</li>
+<li>1 ripe avocado</li>
+<li>Salt and pepper</li>
+<li>Lemon juice</li>
+</ul>
+
+<strong>Instructions:</strong>
+<p>
+Toast bread slices. Mash avocado with lemon juice, salt, and pepper. Spread evenly on toast and serve immediately for a healthy breakfast.
+</p>
+</div>
+
+
+<div class="recipe-card">
+<h3>Chicken Curry</h3>
+
+<strong>Ingredients:</strong>
+<ul>
+<li>500g chicken pieces</li>
+<li>2 onions</li>
+<li>2 tomatoes</li>
+<li>1 tbsp ginger garlic paste</li>
+<li>Spices (turmeric, chili, garam masala)</li>
+</ul>
+
+<strong>Instructions:</strong>
+<p>
+Sauté onions until golden. Add ginger garlic paste and tomatoes. Add spices and chicken. Cook for 20 minutes until chicken is tender. Serve with rice or naan.
+</p>
+</div>
+
+
+<div class="recipe-card">
+<h3>Chocolate Mug Cake</h3>
+
+<strong>Ingredients:</strong>
+<ul>
+<li>4 tbsp flour</li>
+<li>2 tbsp cocoa powder</li>
+<li>3 tbsp milk</li>
+<li>2 tbsp sugar</li>
+<li>2 tbsp oil</li>
+</ul>
+
+<strong>Instructions:</strong>
+<p>
+Mix all ingredients in a mug until smooth. Microwave for 60–90 seconds. Let it cool slightly and enjoy a quick chocolate dessert.
+</p>
+</div>
+
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Easy Home Cooking Recipes | All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
